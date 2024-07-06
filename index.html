@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c34a554746.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#About'>About</a></li>
+                    <li><a href='#portfolio'>Portfolio</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Yashika</span><br>Jindal from India</h1>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div class="about" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photot-3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate 2nd-year "Computer Science" engineering student diving deep into the world of technology. As a proficient web developer, I craft digital experiences with HTML, CSS, and JavaScript. Enthusiastic about the fusion of innovation and code to create captivating web solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Language</span><br><span class="color">Java</span></li>
+                            <br>
+                            <li><span>AI ML</span><br><span class="color">Supervised Learning (Linear Regression, Logistic Regression, Decision Trees, Random Forest, SVM, k-NN)} <br> Unsupervised Learning (K-Means Clustering, Hierarchical Clustering, PCA)</span></li>
+                            <br>
+                            <li><span>Web Development</span><br><span class="color">HTML,CSS,JavaScript</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Achievements">
+                        <ul>
+                                <li><span>L’Oreal Scholarship Awardee</span><br><span class="color">L’Oreal  for Young Women in Science Scholarship,2022</span></li>
+                                <br>
+                                <li><span>NPTEL SOFT Skills Developement Topper</span><br><span class="color">Among the top 1% of candidates enrolled in the course in the 3rd semester</span></li>
+                                <br>
+                                <li><span>3rd position in Future of Work Challenge by Google's Global Director</span><br><span class="color">"Reinvent a TV Remote for differently abled"<br>The challenge was curated by Rahul Jindal | Google's Global Director</span></li>
+                                <br>
+                                <li><span>Recipient of Meritorious Student Scholarship - IGDTUW</span><br><span class="color">
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>B.Tech (CSE)</span><br><pre class="color">Indira Gandhi Delhi Technical University for Women                     (November 2022-Now)</pre><br><pre class="color">CGPA : 9.30</pre> 
+                                </li>
+                                <br>
+                                <li><span>XII CBSE</span><br><pre class="color">S.D.PUBLIC SCHOOL      Percentage: 94%</pre></li>
+                                <br>
+                                <li><span>X CBSE</span><br><pre class="color">S.D.PUBLIC SCHOOL      Percentage: 96%</pre></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list href="#" onclick="window.open('https://github.com/yashika915729/Loan-Eligibility-Predictor.git');">
+            <div class="work" >
+                <img src="loan_predictor.jpg">
+                <div class="layer">
+                    <br>
+                    <h3>LoanVue</h3>
+                    <br>
+                    <pre>Empowering financial institutions<br>with precise loan eligibility predictions,<br>ensuring informed lending decisions,<br>and robust risk management</pre>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+         <!-------Recommendation System---------->
+        <div class="work-list" window.open('https://github.com/yashika915729/CineVerse-Movie-Recommendation-Model.git');">
+            <div class="work" >
+                <img src="recommendation_system.jpg">
+                <div class="layer">
+                    <br>
+                    <h3>CineVerse</h3>
+                    <br>
+                    <pre>Unlock personalized movie magic<br>with CineVerse: Your ultimate guide<br>to tailored film recommendations</pre>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            </div>
+        <a class="btn" id="showMoreButton">See more</a>
+    </div>
+</div>
+<!------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yashika915729@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8076705908</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" onclick="window.open('https://www.instagram.com/yashika915729/?hl=en');"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" onclick="windowopen('https://www.linkedin.com/in/yashika-jindal-6b04a6214');"><i class="fa-brands fa-linkedin"></i></a>
+                   
+                    
+                </div>
+                <a href="Resume (Yashika Jindal).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Message" placeholder="Your Message" required>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yashika Jindal</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
